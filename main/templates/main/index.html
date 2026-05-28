@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НИО УИЦ МЧС КР</title>
+
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>
+            Учебно-исследовательский центр при Министерстве чрезвычайных ситуаций Кыргызской Республики
+        </h1>
+
+
+    </header>
+
+    <!-- Меню -->
+   <nav>
+    <ul>
+        <li><a href="/about/">О центре</a></li>
+        <li><a href="/about2/">О НИО</a></li>
+        <li><a href="/employees/">Сотрудники</a></li>
+        <li><a href="/research/">Научные работы</a></li>
+        <li><a href="/conferences/">Конференции</a></li>
+        <li><a href="/contacts/">Контакты</a></li>
+    </ul>
+</nav>
+
+    <!-- Основной контент -->
+    <main>
+
+        <section>
+            <img src="{% static 'main/images/center.png' %}" alt="Учебно-исследовательский центр">
+        </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>
+            © 2026 Учебно-исследовательский центр при МЧС КР
+        </p>
+    </footer>
+
+</body>
+
+</html>

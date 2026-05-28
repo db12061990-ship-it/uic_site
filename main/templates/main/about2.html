@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НИО УМУ УИЦ при МЧС КР</title>
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>
+            Научно-исследовательское отделение УМУ УИЦ при МЧС КР</h1>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="section.about">
+ <h2 class="title">Сотрудники</h2>
+             <div class="employees">
+                <div class="employee">
+                    <img src="{% static 'main/images/berdaliev.png' %}">
+            <h3>Бердалиев Данияр Шаршенкулович</h3>
+            <p>Начальник НИО УМУ УИЦ при МЧС КР</p></div>
+                    <div class="employee">
+                    <img src="{% static 'main/images/ismanshan.png' %}">
+                    <h3>Исманжан уулу Шермамат</h3>
+            <p>Старший офицер НИО УМУ УИЦ при МЧС КР</p></div>
+      </div>
+      <div class="about">Научно-исследовательское отделение Учебно-методического управления при Министерства чрезвычайных ситуаций занимается</div>
+        </section>
+    </main>
+</body>
+</html>

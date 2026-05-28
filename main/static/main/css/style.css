@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Шапка */
+header {
+    background-color: #0408eb;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Меню */
+nav {
+    background-color: #0055aa;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    padding: 15px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+
+    img {
+        width: 100%;
+        border: 3px solid black;
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+    }
+
+    /* Карточки */
+    .card {
+        background-color: rgb(11, 189, 233);
+        padding: 15px;
+        margin-bottom: 15px;
+
+        border-radius: 10px;
+
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .employees {
+        background-color: rgb(32, 229, 243);
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .employee img {
+        width: 300px;
+        height: 350px;
+    }
+
+    .section about {
+        background-color: #0fa0f5
+    }
+
+    .about {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+    }
+
+    .employee {
+        background-color: chocolate;
+        padding: auto;
+        box-shadow: #003366
+    }
+
+    .employees {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .employee img {
+        width: 300px;
+        height: 350px;
+    }
+
+    /* Подвал */
+    footer {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+    .research-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.status-progress {
+    color: orange;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+   
+    .about {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+    }
+
+    .conference {
+        background-color: chocolate;
+        padding: auto;
+        box-shadow: #003366
+    }
+    .conferences-page {
+    padding: 20px;
+}
+
+.conference-section {
+    margin-bottom: 50px;
+}
+
+.conference-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    max-width: 900px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.conference-card img {
+    width: 100%;
+    max-width: 700px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.conference-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.pdf-btn {
+    background-color: #d62828;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-btn:hover {
+    background-color: #a4161a;
+}
+
+.pdf-btn:visited {
+    color: white;
+}
+
+.pdf-btn:hover {
+    background-color: #a4161a;
+}
+.status-progress {
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-done {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

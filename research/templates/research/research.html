@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НИР УИЦ МЧС КР</title>
+
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+
+<body>
+
+<header>
+    <h1>
+        Научно-исследовательские работы сотрудников УИЦ при МЧС КР
+    </h1>
+</header>
+
+<main>
+    <form method="GET" class="search-form">
+
+    <select name="status">
+        <option value="">Все статусы</option>
+        <option value="В процессе">В процессе</option>
+        <option value="Завершено">Завершено</option>
+    </select>
+
+    <button type="submit">Фильтр</button>
+</form>
+
+<table class="research-table">
+
+    <thead>
+        <tr>
+            <th>№</th>
+            <th>Ф.И.О сотрудника</th>
+            <th>Наименование НИР</th>
+            <th>Срок исполнения</th>
+            <th>Статус</th>
+            <th>Результат</th>
+            <th>PDF</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    {% for work in works %}
+    <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ work.employee }}</td>
+        <td>{{ work.title }}</td>
+        <td>{{ work.deadline }}</td>
+        <td>
+    {% if "Заверш" in work.status %}
+        <span class="status-done">{{ work.status }}</span>
+    {% else %}
+        <span class="status-progress">{{ work.status }}</span>
+    {% endif %}
+</td>
+        <td>{{ work.result }}</td>
+        <td>
+            {% if work.pdf_file %}
+            <a href="{{ work.pdf_file.url }}" target="_blank" class="pdf-btn">
+    PDF
+</a>
+            {% else %}
+            Нет файла
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
+
+</table>
+
+</main>
+
+</body>
+
+</html>
